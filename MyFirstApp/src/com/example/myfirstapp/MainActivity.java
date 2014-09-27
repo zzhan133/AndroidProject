@@ -23,13 +23,14 @@ public class MainActivity extends Activity {
 	
 	//false represent empty; true represents occupied
 	private static Boolean colorStatus[] = {false, false, false, false, false, false, false, false, false, false};
+	private long startTime[] = {0,0,0,0,0,0,0,0,0,0};
 	
 	private static int resourceId[] = {R.id.slotOne, R.id.slotTwo,
 			R.id.slotThree,R.id.slotFour,R.id.slotFive,R.id.slotSix,R.id.slotSeven,R.id.slotEight,R.id.slotNine,R.id.slotTen};
 	
 	private TextView textView;
 	
-//	private Calendar parkingTime[10] = {0,0,0,0,0,0,0,0,0,0};
+//	private Calendar parkingTime[10] = {02};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,6 @@ public class MainActivity extends Activity {
 		textView.setTextSize(40);
 		//Set the text view as the activity layout
 		textView.setText(str);
-		textView.setGravity(Gravity.CENTER_HORIZONTAL);
 		
 	}
 
@@ -96,7 +96,16 @@ public class MainActivity extends Activity {
 		//startActivity(intent);
 		
 		int num = Integer.parseInt(message);
-		colorStatus[num-1] = true;
+		if(colorStatus[num-1])
+		{
+			colorStatus[num-1] = false;
+			startTime[num-1] = 0;
+		}
+		else{
+			colorStatus[num-1] = true;
+			startTime[num-1] = System.currentTimeMillis();;
+		}
+			
 		showButtonColor();
 		
 	}
