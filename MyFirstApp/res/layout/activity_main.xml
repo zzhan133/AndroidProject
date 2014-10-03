@@ -61,15 +61,21 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+					
+					<TextView android:id="@+id/priceOne"
+	        			android:layout_width="40dp"	        	
+						android:layout_height="40dp">    						   
+		    		</TextView>
+				    
 				</LinearLayout>
 	
 	        	<Button
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:background="#00aa00"
-		            android:id="@+id/slotOne"
-		            android:onClick="changeColor"
-	            	android:text="1" />
+	        	    android:id="@+id/slotOne"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:background="#00aa00"
+	        	    android:onClick="showTime"
+	        	    android:text="1" />
 	
 	    		<LinearLayout android:layout_width="fill_parent"
 		        	android:layout_height="wrap_content"
@@ -90,6 +96,11 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+					
+	     		    <TextView android:id="@+id/priceSix"
+	        			android:layout_width="wrap_content"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
 				</LinearLayout>
 			</LinearLayout>
     
@@ -102,6 +113,13 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+	     		    
+				    <TextView android:id="@+id/priceTwo"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
+				    
 				</LinearLayout>
 	
 	        	<Button
@@ -131,6 +149,13 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+				    
+	     		    <TextView android:id="@+id/priceSeven"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
+	     		    
 				</LinearLayout>
 			</LinearLayout>
     
@@ -143,6 +168,12 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+	     		    
+				    <TextView android:id="@+id/priceThree"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
 				</LinearLayout>
 	
 	        	<Button
@@ -172,6 +203,12 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+				    
+	     		    <TextView android:id="@+id/priceEight"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
 				</LinearLayout>
 			</LinearLayout>
     
@@ -184,6 +221,13 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+	     		    
+				    <TextView android:id="@+id/priceFour"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
+				    
 				</LinearLayout>
 	
 	        	<Button
@@ -213,6 +257,13 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+				    
+	     		    <TextView android:id="@+id/priceNine"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
+	     		    
 				</LinearLayout>
 			</LinearLayout>
     
@@ -225,6 +276,13 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+	     		    
+				    <TextView android:id="@+id/priceFive"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
+				    
 				</LinearLayout>
 	
 	        	<Button
@@ -254,6 +312,13 @@
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
+				    
+	     		    <TextView android:id="@+id/priceTen"
+	        			android:layout_width="wrap_content"	        	
+	        			android:layout_weight="1"
+						android:layout_height="wrap_content">    						   
+		    		</TextView>
+	     		    
 				</LinearLayout>
 			</LinearLayout>
         
