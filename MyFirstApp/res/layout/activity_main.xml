@@ -6,7 +6,7 @@
     
     tools:context="com.example.myfirstapp.MainActivity" >
 	
-    <LinearLayout android:layout_width="fill_parent"
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     
@@ -25,11 +25,11 @@
     </LinearLayout>
     
     <LinearLayout android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
-		<LinearLayout android:layout_width="fill_parent"
+		<LinearLayout android:layout_width="match_parent"
 	        	android:layout_height="wrap_content"
 	        	android:layout_weight="1"
 			android:orientation="vertical">
@@ -52,12 +52,12 @@
 		    
 		</LinearLayout>
 	    
-       	<LinearLayout android:layout_width="fill_parent"
+       	<LinearLayout android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 				android:orientation="horizontal">
 	
-				<LinearLayout android:layout_width="fill_parent"
+				<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -77,7 +77,7 @@
 	        	    android:onClick="showTime"
 	        	    android:text="1" />
 	
-	    		<LinearLayout android:layout_width="fill_parent"
+	    		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -92,7 +92,7 @@
 		             android:onClick="changeColor"
 	             android:text="6" />
 	
-	     		<LinearLayout android:layout_width="fill_parent"
+	     		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -104,12 +104,12 @@
 				</LinearLayout>
 			</LinearLayout>
     
-    		<LinearLayout android:layout_width="fill_parent"
+    		<LinearLayout android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 				android:orientation="horizontal">
 	
-				<LinearLayout android:layout_width="fill_parent"
+				<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -130,7 +130,7 @@
 		            android:onClick="changeColor"
 	            	android:text="2" />
 	
-	    		<LinearLayout android:layout_width="fill_parent"
+	    		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -145,7 +145,7 @@
 		             android:onClick="changeColor"
 	             android:text="7" />
 	
-	     		<LinearLayout android:layout_width="fill_parent"
+	     		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -159,12 +159,12 @@
 				</LinearLayout>
 			</LinearLayout>
     
-    		<LinearLayout android:layout_width="fill_parent"
+    		<LinearLayout android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 				android:orientation="horizontal">
 	
-				<LinearLayout android:layout_width="fill_parent"
+				<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -184,7 +184,7 @@
 		            android:onClick="changeColor"
 	            android:text="3" />
 	
-	    		<LinearLayout android:layout_width="fill_parent"
+	    		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -199,7 +199,7 @@
 		             android:onClick="changeColor"
 	             android:text="8" />
 	
-	     		<LinearLayout android:layout_width="fill_parent"
+	     		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -212,12 +212,12 @@
 				</LinearLayout>
 			</LinearLayout>
     
-    		<LinearLayout android:layout_width="fill_parent"
+    		<LinearLayout android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 				android:orientation="horizontal">
 	
-				<LinearLayout android:layout_width="fill_parent"
+				<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -238,7 +238,7 @@
 		            android:onClick="changeColor"
 	            android:text="4" />
 	
-	    		<LinearLayout android:layout_width="fill_parent"
+	    		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -253,7 +253,7 @@
 		             android:onClick="changeColor"
 	             android:text="9" />
 	
-	     		<LinearLayout android:layout_width="fill_parent"
+	     		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -267,12 +267,12 @@
 				</LinearLayout>
 			</LinearLayout>
     
-	    	<LinearLayout android:layout_width="fill_parent"
+	    	<LinearLayout android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 				android:orientation="horizontal">
 	
-				<LinearLayout android:layout_width="fill_parent"
+				<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -293,7 +293,7 @@
 		            android:onClick="changeColor"
 	            android:text="5" />
 	
-	    		<LinearLayout android:layout_width="fill_parent"
+	    		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
@@ -308,7 +308,7 @@
 		             android:onClick="changeColor"
 	             android:text="10" />
 	
-	     		<LinearLayout android:layout_width="fill_parent"
+	     		<LinearLayout android:layout_width="match_parent"
 		        	android:layout_height="wrap_content"
 		        	android:layout_weight="1"
 					android:orientation="horizontal">
