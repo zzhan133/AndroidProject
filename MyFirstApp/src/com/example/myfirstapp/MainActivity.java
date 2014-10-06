@@ -70,7 +70,8 @@ public class MainActivity extends Activity {
 				remaining--;
 			}
 			else{
-				buttonArray[i].setBackgroundColor(Color.GREEN);
+				//buttonArray[i].setBackgroundColor(Color.GREEN);
+				buttonArray[i].getBackground().setAlpha(65);
 			}
 		}
 		
