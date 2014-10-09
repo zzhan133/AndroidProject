@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    
     tools:context="com.example.myfirstapp.MainActivity" >
 	
     <LinearLayout android:layout_width="match_parent"
@@ -24,305 +23,230 @@
 
     </LinearLayout>
     
-    <LinearLayout android:orientation="vertical"
+    
+    
+    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="80dp"
+		    android:layout_gravity="center_horizontal"
+		    android:orientation="horizontal" >			    
+			    <TextView android:id="@+id/remainingSlots"
+		        	android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:textSize="50sp"
+					android:text="@string/remaining_slots">    						   
+			    </TextView>			   	    
+	</RelativeLayout>
+    
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/road"
-        android:layout_weight="1">
-
-		<LinearLayout android:layout_width="match_parent"
-	        	android:layout_height="wrap_content"
-	        	android:layout_weight="1"
-			android:orientation="vertical">
-		</LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
 		
-	<LinearLayout
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_weight="1"
-	    android:layout_gravity="center_horizontal"
-	    android:orientation="horizontal" >
 
-	    
-		    <TextView android:id="@+id/remainingSlots"
-	        	android:layout_width="wrap_content"	        	
-	        	android:layout_weight="1"
-				android:layout_height="wrap_content">    						   
-		    </TextView>
-		    
-		    
-		</LinearLayout>
-	    
-       	<LinearLayout android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-				android:orientation="horizontal">
-	
-				<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+		
+		<TableRow android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:layout_width="match_parent">
+
+		    <TextView android:id="@+id/priceOne"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-					
-					<TextView android:id="@+id/priceOne"
-	        			android:layout_width="40dp"	        	
-						android:layout_height="40dp">    						   
-		    		</TextView>
-				    
-				</LinearLayout>
-	
-	        	<Button
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="@string/money_sign"/>
+		    
+		    <ImageButton
 	        	    android:id="@+id/slotOne"
-	        	    android:layout_width="wrap_content"
-	        	    android:layout_height="wrap_content"
-	        	    android:background="#00aa00"
-	        	    android:onClick="showTime"
-	        	    android:text="1" />
-	
-	    		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        	    android:layout_weight="2"
+	        	    android:layout_width="0dp"
+	        	    android:scaleType="fitStart"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotSix"
+	        	    android:layout_weight="2"
+	        	    android:scaleType="fitEnd"
+	        	    android:layout_width="0dp"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <TextView android:id="@+id/priceSix"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				</LinearLayout>
-	
-	         	<Button
-		             android:layout_width="wrap_content"		
-		             android:layout_height="wrap_content"
-		             android:layout_marginRight="2dp"
-		             android:background="#00aa00"
-		             android:id="@+id/slotSix"
-		             android:onClick="changeColor"
-	             android:text="6" />
-	
-	     		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+
+		</TableRow>
+		
+		<TableRow android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:layout_width="match_parent">
+
+		    <TextView android:id="@+id/priceTwo"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-					
-	     		    <TextView android:id="@+id/priceSix"
-	        			android:layout_width="wrap_content"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-				</LinearLayout>
-			</LinearLayout>
-    
-    		<LinearLayout android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-				android:orientation="horizontal">
-	
-				<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotTwo"
+	        	    android:layout_weight="2"
+	        	    android:layout_width="0dp"
+	        	    android:scaleType="fitStart"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotSeven"
+	        	    android:layout_weight="2"
+	        	    android:scaleType="fitEnd"
+	        	    android:layout_width="0dp"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <TextView android:id="@+id/priceSeven"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-	     		    
-				    <TextView android:id="@+id/priceTwo"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-				    
-				</LinearLayout>
-	
-	        	<Button
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:background="#00aa00"
-		            android:id="@+id/slotTwo"
-		            android:onClick="changeColor"
-	            	android:text="2" />
-	
-	    		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+
+		</TableRow>
+		
+		<TableRow android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:layout_width="match_parent">
+
+		    <TextView android:id="@+id/priceThree"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				</LinearLayout>
-	
-	         	<Button
-		             android:layout_width="wrap_content"		
-		             android:layout_height="wrap_content"
-		             android:layout_marginRight="2dp"
-		             android:background="#00aa00"
-		             android:id="@+id/slotSeven"
-		             android:onClick="changeColor"
-	             android:text="7" />
-	
-	     		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotThree"
+	        	    android:layout_weight="2"
+	        	    android:layout_width="0dp"
+	        	    android:scaleType="fitStart"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotEight"
+	        	    android:layout_weight="2"
+	        	    android:scaleType="fitEnd"
+	        	    android:layout_width="0dp"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <TextView android:id="@+id/priceEight"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				    
-	     		    <TextView android:id="@+id/priceSeven"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-	     		    
-				</LinearLayout>
-			</LinearLayout>
-    
-    		<LinearLayout android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-				android:orientation="horizontal">
-	
-				<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+
+		</TableRow>
+		
+		<TableRow android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:layout_width="match_parent">
+
+		    <TextView android:id="@+id/priceFour"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-	     		    
-				    <TextView android:id="@+id/priceThree"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-				</LinearLayout>
-	
-	        	<Button
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:background="#00aa00"
-		            android:id="@+id/slotThree"
-		            android:onClick="changeColor"
-	            android:text="3" />
-	
-	    		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotFour"
+	        	    android:layout_weight="2"
+	        	    android:layout_width="0dp"
+	        	    android:scaleType="fitStart"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotNine"
+	        	    android:layout_weight="2"
+	        	    android:scaleType="fitEnd"
+	        	    android:layout_width="0dp"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <TextView android:id="@+id/priceNine"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				</LinearLayout>
-	
-	         	<Button
-		             android:layout_width="wrap_content"		
-		             android:layout_height="wrap_content"
-		             android:layout_marginRight="2dp"
-		             android:background="#00aa00"
-		             android:id="@+id/slotEight"
-		             android:onClick="changeColor"
-	             android:text="8" />
-	
-	     		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+
+		</TableRow>
+		
+		
+		<TableRow android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:layout_width="match_parent">
+
+		    <TextView android:id="@+id/priceFive"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				    
-	     		    <TextView android:id="@+id/priceEight"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-				</LinearLayout>
-			</LinearLayout>
-    
-    		<LinearLayout android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-				android:orientation="horizontal">
-	
-				<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotFive"
+	        	    android:layout_weight="2"
+	        	    android:layout_width="0dp"
+	        	    android:scaleType="fitStart"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <ImageButton
+	        	    android:id="@+id/slotTen"
+	        	    android:layout_weight="2"
+	        	    android:scaleType="fitEnd"
+	        	    android:layout_width="0dp"
+	        	    android:layout_height="match_parent"
+	        	    android:src="@drawable/car"
+	        	    android:contentDescription="@string/desc"
+	        	    android:onClick="showTime"/>
+		    
+		    <TextView android:id="@+id/priceTen"
 		        	android:layout_weight="1"
-					android:orientation="horizontal">
-	     		    
-				    <TextView android:id="@+id/priceFour"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-				    
-				</LinearLayout>
-	
-	        	<Button
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:background="#00aa00"
-		            android:id="@+id/slotFour"
-		            android:onClick="changeColor"
-	            android:text="4" />
-	
-	    		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
-		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				</LinearLayout>
-	
-	         	<Button
-		             android:layout_width="wrap_content"		
-		             android:layout_height="wrap_content"
-		             android:layout_marginRight="2dp"
-		             android:background="#00aa00"
-		             android:id="@+id/slotNine"
-		             android:onClick="changeColor"
-	             android:text="9" />
-	
-	     		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
-		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				    
-	     		    <TextView android:id="@+id/priceNine"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-	     		    
-				</LinearLayout>
-			</LinearLayout>
-    
-	    	<LinearLayout android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-				android:orientation="horizontal">
-	
-				<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
-		        	android:layout_weight="1"
-					android:orientation="horizontal">
-	     		    
-				    <TextView android:id="@+id/priceFive"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-				    
-				</LinearLayout>
-	
-	        	<Button
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:background="#00aa00"
-		            android:id="@+id/slotFive"
-		            android:onClick="changeColor"
-	            android:text="5" />
-	
-	    		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
-		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				</LinearLayout>
-	
-	         	<Button
-		             android:layout_width="wrap_content"		
-		             android:layout_height="wrap_content"
-		             android:layout_marginRight="2dp"
-		             android:background="#00aa00"
-		             android:id="@+id/slotTen"
-		             android:onClick="changeColor"
-	             android:text="10" />
-	
-	     		<LinearLayout android:layout_width="match_parent"
-		        	android:layout_height="wrap_content"
-		        	android:layout_weight="1"
-					android:orientation="horizontal">
-				    
-	     		    <TextView android:id="@+id/priceTen"
-	        			android:layout_width="wrap_content"	        	
-	        			android:layout_weight="1"
-						android:layout_height="wrap_content">    						   
-		    		</TextView>
-	     		    
-				</LinearLayout>
-			</LinearLayout>
+	        		android:layout_width="0dp"	        	
+					android:layout_height="match_parent"
+					android:text="@string/money_sign"/>
+
+		</TableRow>
         
-        
-	</LinearLayout>
+	    
+	      <TableRow android:layout_height="wrap_content"
+	          android:visibility="invisible"
+	          android:layout_width="match_parent">
+		    <TextView 
+		        android:textSize="50sp"
+            	android:text="@string/empty" />
+	      </TableRow>
+		</TableLayout>
 </LinearLayout>

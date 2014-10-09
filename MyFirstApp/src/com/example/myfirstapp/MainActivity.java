@@ -7,19 +7,18 @@ import android.os.SystemClock;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
 
 public class MainActivity extends Activity {
 
 	public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 	
-	private Button[] buttonArray;
+	private ImageButton[] buttonArray;
 	
 	//false represent empty; true represents occupied
+	//There is only one place to change the status; in function: sendMessage
 	private static Boolean colorStatus[] = {false, false, false, false, false, false, false, false, false, false};
 	
 	//记录停车开始时间
@@ -50,11 +49,11 @@ public class MainActivity extends Activity {
 		
 		textView = (TextView)findViewById(R.id.remainingSlots);
 		
-		buttonArray = new Button[10];
+		buttonArray = new ImageButton[10];
 		textPriceView = new TextView[10];
 		
 		for(int i = 0; i < 10; i++){
-			buttonArray[i] = (Button) findViewById(resourceId[i]);
+			buttonArray[i] = (ImageButton) findViewById(resourceId[i]);
 			textPriceView[i] = (TextView) findViewById(priceResourceId[i]);
 		}
 		
@@ -66,19 +65,20 @@ public class MainActivity extends Activity {
 		int remaining = 10;
 		for(int i = 0; i < 10; i++){
 			if(colorStatus[i]){
-				buttonArray[i].setBackgroundColor(Color.RED);
+				buttonArray[i].setVisibility(View.VISIBLE);   //0 represent "visible"
 				remaining--;
 			}
 			else{
 				//buttonArray[i].setBackgroundColor(Color.GREEN);
-				buttonArray[i].getBackground().setAlpha(65);
+				buttonArray[i].setVisibility(View.INVISIBLE);  //1 represent "invisible"
 			}
 		}
 		
 		//Context context = new Context();
 		
 		String str = Integer.toString(remaining);
-		textView.setTextSize(40);
+		str = "剩下的停车位:" + str;
+		textView.setTextSize(50);
 		//Set the text view as the activity layout
 		textView.setText(str);
 		
@@ -88,9 +88,9 @@ public class MainActivity extends Activity {
 
 
 	
-	/**Called when the user clicks the Send button */
+	/**Called when the user clicks the Send ImageButton */
 	public void sendMessage(View view){
-		//Do something in response to button
+		//Do something in response to ImageButton
 		//Intent intent = new Intent(this, DisplayMessageActivity.class);
 		EditText editText = (EditText)findViewById(R.id.edit_message);
 		String message = editText.getText().toString();
@@ -116,9 +116,9 @@ public class MainActivity extends Activity {
 	}
 	
 	public void showTime(View view){
-		Button tmpButton = (Button) view;
+//		ImageButton tmpButton = (ImageButton) view;
 		
-		tmpButton.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);		
+//		tmpButton.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);		
 	}
 	
 	
@@ -129,8 +129,10 @@ public class MainActivity extends Activity {
 				int secs = (int) (timeInMilliseconds / 1000);
 				int mins = secs / 60;
 				String str = Integer.toString(mins);
-				textPriceView[i].setTextSize(40);
+				str = "￥" + str + ".0";
 				//Set the text view as the activity layout
+				textPriceView[i].setGravity(0x11);
+				textPriceView[i].setTextSize(30);
 				textPriceView[i].setText(str);
 			}
 		}
@@ -157,7 +159,7 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
+		// automatically handle clicks on the Home/Up ImageButton, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
