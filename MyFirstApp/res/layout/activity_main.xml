@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/road"
     tools:context="com.example.myfirstapp.MainActivity" >
 	
     <LinearLayout android:layout_width="match_parent"
@@ -27,13 +28,20 @@
     
     <RelativeLayout
 		    android:layout_width="match_parent"
-		    android:layout_height="80dp"
-		    android:layout_gravity="center_horizontal"
-		    android:orientation="horizontal" >			    
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	    		<ImageView
+	    		    android:id="@+id/admin_ID"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_alignParentLeft="true"
+	    		    android:contentDescription="@string/desc" 
+	    		    android:src="@drawable/admin_id"/>
+	    					    
 			    <TextView android:id="@+id/remainingSlots"
-		        	android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="center"
+		        	android:layout_width="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_height="wrap_content"
 					android:textSize="50sp"
 					android:text="@string/remaining_slots">    						   
 			    </TextView>			   	    
@@ -46,6 +54,13 @@
         android:baselineAligned="false"
         android:orientation="horizontal" >
 		
+        <TableRow android:layout_height="wrap_content"
+	          android:visibility="invisible"
+	          android:layout_width="match_parent">
+		    <TextView 
+		        android:textSize="50sp"
+            	android:text="@string/empty" />
+	      </TableRow>
 
 		
 		<TableRow android:layout_height="0dp"
