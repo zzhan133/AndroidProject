@@ -27,8 +27,8 @@ public class MainActivity extends Activity {
 	private static int resourceId[] = {R.id.slotOne, R.id.slotTwo,
 			R.id.slotThree,R.id.slotFour,R.id.slotFive,R.id.slotSix,R.id.slotSeven,R.id.slotEight,R.id.slotNine,R.id.slotTen};
 	
-	private static int priceResourceId[] = {R.id.priceOne, R.id.priceTwo, R.id.priceThree,R.id.priceFour,R.id.priceFive
-				,R.id.priceSix,R.id.priceSeven,R.id.priceEight,R.id.priceNine,R.id.priceTen};
+	private static int priceResourceId[] = {R.id.price_one, R.id.price_two, R.id.price_three,R.id.price_four,R.id.price_five
+				,R.id.price_six,R.id.price_seven,R.id.price_eight,R.id.price_nine,R.id.price_ten};
 	
 	
 	private TextView[] textPriceView;
@@ -77,8 +77,6 @@ public class MainActivity extends Activity {
 		//Context context = new Context();
 		
 		String str = Integer.toString(remaining);
-		str = "剩下的停车位:" + str;
-		textView.setTextSize(50);
 		//Set the text view as the activity layout
 		textView.setText(str);
 		
@@ -131,8 +129,6 @@ public class MainActivity extends Activity {
 				String str = Integer.toString(mins);
 				str = "￥" + str + ".0";
 				//Set the text view as the activity layout
-				textPriceView[i].setGravity(0x11);
-				textPriceView[i].setTextSize(30);
 				textPriceView[i].setText(str);
 			}
 		}

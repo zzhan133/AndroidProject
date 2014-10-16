@@ -43,14 +43,32 @@
                 android:contentDescription="@string/desc"
                 android:src="@drawable/admin_id" />
 
-            <TextView
-                android:id="@+id/remainingSlots"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="@string/remaining_slots"
-                android:textSize="50sp" >
-            </TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/admin_ID"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/remain_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/slots"
+                    android:textSize="50sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/remainingSlots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remain_text"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/remaining_slots"
+                    android:textSize="80sp" >
+                </TextView>
+            </RelativeLayout>
         </RelativeLayout>
     </LinearLayout>
 
@@ -71,9 +89,19 @@
             android:layout_height="0dp"
             android:layout_weight="1" >
 
-            <TextView
-                android:id="@+id/priceOne"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_one"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_one"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_one"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
 
             <ImageButton
                 android:id="@+id/slotOne"
@@ -85,9 +113,19 @@
                 style="@style/ImageStyle.RightCar"
                 android:contentDescription="@string/desc" />
 
-            <TextView
-                android:id="@+id/priceSix"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_six"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_six"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_six"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
         </TableRow>
 
         <TableRow
@@ -95,9 +133,20 @@
             android:layout_height="0dp"
             android:layout_weight="1" >
 
-            <TextView
-                android:id="@+id/priceTwo"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_two"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_two"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_two"
+                	style ="@style/PriceStyle.text"/>
+            </RelativeLayout>
+
 
             <ImageButton
                 android:id="@+id/slotTwo"
@@ -109,9 +158,19 @@
                 style="@style/ImageStyle.RightCar"
                 android:contentDescription="@string/desc" />
 
-            <TextView
-                android:id="@+id/priceSeven"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_seven"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_seven"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_seven"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
         </TableRow>
 
         <TableRow
@@ -119,9 +178,20 @@
             android:layout_height="0dp"
             android:layout_weight="1" >
 
-            <TextView
-                android:id="@+id/priceThree"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_three"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_three"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_three"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
+
 
             <ImageButton
                 android:id="@+id/slotThree"
@@ -133,9 +203,20 @@
                 style="@style/ImageStyle.RightCar"
                 android:contentDescription="@string/desc" />
 
-            <TextView
-                android:id="@+id/priceEight"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_eight"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_eight"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_eight"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
+
         </TableRow>
 
         <TableRow
@@ -143,9 +224,20 @@
             android:layout_height="0dp"
             android:layout_weight="1" >
 
-            <TextView
-                android:id="@+id/priceFour"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_four"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_four"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_four"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
+
 
             <ImageButton
                 android:id="@+id/slotFour"
@@ -157,9 +249,20 @@
                 style="@style/ImageStyle.RightCar"
                 android:contentDescription="@string/desc" />
 
-            <TextView
-                android:id="@+id/priceNine"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_nine"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_nine"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_nine"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
+
         </TableRow>
 
         <TableRow
@@ -167,31 +270,51 @@
             android:layout_height="0dp"
             android:layout_weight="1" >
 
-            <TextView
-                android:id="@+id/priceFive"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_five"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_five"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_five"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
+
 
             <ImageButton
                 android:id="@+id/slotFive"
                 style="@style/ImageStyle.LeftCar"
-                android:contentDescription="@string/desc"
-                />
+                android:contentDescription="@string/desc" />
 
             <ImageButton
                 android:id="@+id/slotTen"
                 style="@style/ImageStyle.RightCar"
-                android:contentDescription="@string/desc"/>
+                android:contentDescription="@string/desc" />
 
-            <TextView
-                android:id="@+id/priceTen"
-                style="@style/PriceStyle" />
+            <RelativeLayout
+                style="@style/PriceRelativeStyle">
+
+                <TextView
+                    android:id="@+id/price_ten"
+                    style ="@style/PriceStyle.text" />
+                
+                <ImageView
+                    android:id="@+id/warning_ten"
+                    android:contentDescription="@string/desc"
+                    android:layout_below="@id/price_ten"
+                	style ="@style/PriceStyle.image"/>
+            </RelativeLayout>
+
         </TableRow>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="76dp" >
         </View>
-        
     </TableLayout>
 
 </LinearLayout>

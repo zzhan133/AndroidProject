@@ -10,7 +10,8 @@
 	
 	<string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
-    <string name="remaining_slots">剩下的停车位:10</string>
+    <string name="remaining_slots">10</string>
+    <string name="slots">空余车位</string>
     <string name="One">1</string>
     <string name="Two">2</string>
     <string name="Three">3</string>
@@ -22,6 +23,7 @@
     <string name="Nine">9</string>
     <string name="Ten">10</string>
     <string name="empty">Empty</string>
-    <string name="money_sign"></string>
+    <string name="money_sign">￥10.0</string>
     <string name="desc">This is a car</string>
+    
 </resources>

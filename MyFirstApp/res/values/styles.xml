@@ -17,6 +17,35 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     
+    
+    
+    
+	
+    <style name="PriceRelativeStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+    <style name="PriceStyle">
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_centerHorizontal">true</item>
+	</style>
+	
+    <style name="PriceStyle.text">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:text">@string/money_sign</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    
+    <style name="PriceStyle.image">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:src">@drawable/warning</item>
+    </style>
+    
     <style name="ImageStyle" >
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">3</item>
@@ -24,20 +53,12 @@
 		<item name="android:onClick">showTime</item>
     </style>
     
-    <style name="PriceStyle">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">2</item>
-		<item name="android:layout_width">0dp</item>
-		<item name="android:text">@string/money_sign</item>
-	</style>
-	
 	<style name="ImageStyle.LeftCar">
         <item name="android:src">@drawable/left_car</item>
     </style>
     
     <style name="ImageStyle.RightCar">
         <item name="android:src">@drawable/right_car</item>
-        <item name="android:visibility">invisible</item>
     </style>
 
 
