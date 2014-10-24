@@ -144,7 +144,7 @@
                     android:id="@+id/warning_two"
                     android:contentDescription="@string/desc"
                     android:layout_below="@id/price_two"
-                	style ="@style/PriceStyle.text"/>
+                	style ="@style/PriceStyle.image"/>
             </RelativeLayout>
 
 

@@ -26,3 +26,5 @@ proguard/
 *.log
 
 PracticeView/
+
+QR_CodeScan/
