@@ -1,9 +1,15 @@
 package com.example.myfirstapp;
 
+import com.example.myfirstapp.android.IntentIntegrator;
+import com.example.myfirstapp.android.IntentResult;
+
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +20,8 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+	
+	private static final String TAG = "ScanResult"; 
 
 	private ImageButton[] buttonArray;
 
@@ -106,6 +114,9 @@ public class MainActivity extends Activity {
 		if (!(num > 0 && num < 10)) {
 			return;
 		}
+		changeSlotState(num);
+	}
+	public void changeSlotState(int num){
 		if (colorStatus[num - 1]) {
 			colorStatus[num - 1] = false;
 			startTime[num - 1] = 0;
@@ -126,8 +137,28 @@ public class MainActivity extends Activity {
 	}
 	
 	public void scanCode(View view){
-		
+		IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
+		integrator.initiateScan();
 	}
+	
+	@Override
+	  public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+	    IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+	    if (result != null) {
+	      String contents = result.getContents();
+	      Log.i(TAG, contents); 
+	      if (contents != null) {
+	        if(contents.equals("slotFive")){
+	        	changeSlotState(5);
+	        }
+	        else if(contents.equals("slotOne")){
+	        	changeSlotState(1);
+	        }
+	      } else {
+	      }
+	    }
+	  }
+	
 
 	private void showPrice() {
 		for (int i = 0; i < 10; i++) {
