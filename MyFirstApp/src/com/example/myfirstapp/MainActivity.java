@@ -124,6 +124,10 @@ public class MainActivity extends Activity {
 		// tmpButton.getBackground().setColorFilter(0xFFFF0000,
 		// PorterDuff.Mode.MULTIPLY);
 	}
+	
+	public void scanCode(View view){
+		
+	}
 
 	private void showPrice() {
 		for (int i = 0; i < 10; i++) {

@@ -25,5 +25,6 @@
     <string name="empty">Empty</string>
     <string name="money_sign">￥10.0</string>
     <string name="desc">This is a car</string>
+    <string name="scan">Scan</string>
     
 </resources>
