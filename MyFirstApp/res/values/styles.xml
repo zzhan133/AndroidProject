@@ -58,7 +58,7 @@
     </style>
     
     <style name="ImageStyle.RightCar">
-        <item name="android:src">@drawable/right_car</item>
+        <item name="android:src">@drawable/right</item>
     </style>
 
 

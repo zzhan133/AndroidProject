@@ -23,7 +23,7 @@
     <string name="Nine">9</string>
     <string name="Ten">10</string>
     <string name="empty">Empty</string>
-    <string name="money_sign">￥10.0</string>
+    <string name="money_sign">￥0.0</string>
     <string name="desc">This is a car</string>
     <string name="scan">Scan</string>
     
